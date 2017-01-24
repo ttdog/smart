@@ -10,5 +10,11 @@
   <%= @device.price %>
 </p>
 
+<% if @device.image? %>
+　　<%= image_tag @device.image.low_thumb.url %>
+　<% else %>
+　　<%= image_tag 'noimage.gif' %>
+<% end %>
+
 <%= link_to 'Edit', edit_device_path(@device) %> |
 <%= link_to 'Back', devices_path %>

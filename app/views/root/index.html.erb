@@ -7,7 +7,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">[スマホ買取サービス]</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -17,10 +17,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">ご利用ガイド</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">高価買取アイテム</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
@@ -104,11 +104,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <%= image_tag 'portfolio/roundicons.png', :class => 'img-responsive' %>
+                        <%= image_tag @devices.first.image.low_thumb.url, :class => 'img-responsive' %>
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
+                        <h4><%= @devices.first.name %></h4>
+                        <p class="text-muted">Max <%= @devices.first.price %></p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -121,8 +121,8 @@
                         <%= image_tag 'portfolio/startup-framework.png', :class => 'img-responsive' %>
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>iPhone6s Black 68G</h4>
+                        <p class="text-muted">Max ¥58,000</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -190,8 +190,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">ご利用方法</h2>
+                    <h3 class="section-subheading text-muted">[スマホ買取サービス]の簡単無料査定</h3>
                 </div>
             </div>
             <div class="row">
@@ -203,11 +203,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                    <h4>STEP1</h4>
+                                    <h4 class="subheading">申し込み</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">インターネットまたはお電話よりご希望のサイズおよび箱数をお申し込みください。お申し込み時にご登録いただく住所に段ボールを送ります。※ 15時までにお申し込みいただいた場合は申込当日に発送いたします。</p>
                                 </div>
                             </div>
                         </li>
@@ -217,11 +217,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                    <h4>STEP2</h4>
+                                    <h4 class="subheading">詰めて送る</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">[スマホ買取サービス]から送られた箱に、お手元の品物を詰めてお送りください。</p>
                                 </div>
                             </div>
                         </li>
@@ -231,11 +231,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4>STEP3</h4>
+                                    <h4 class="subheading">同意する</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">商品到着後、査定結果をご連絡いたします。※ 金額にご納得いただけない場合、送料は弊社負担で商品をご返却いたします。</p>
                                 </div>
                             </div>
                         </li>
@@ -245,19 +245,17 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4>STEP4</h4>
+                                    <h4 class="subheading">完了</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">ご同意いただいた査定金額を指定の口座にお振込みいたします。</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
+                                <h4>Get<br/>money!</h4>
                             </div>
                         </li>
                     </ul>
