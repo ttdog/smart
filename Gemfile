@@ -13,6 +13,8 @@ gem 'bootstrap-sass'
 gem 'carrierwave'
 gem 'rmagick', require: 'Rmagick'
 
+gem 'devise'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 gem 'mysql2'
