@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  zip: 1
+  address: MyString
+  name: MyString
+  nameKana: MyString
+  tell: 1
+  mailAddress: MyString
+
+two:
+  zip: 1
+  address: MyString
+  name: MyString
+  nameKana: MyString
+  tell: 1
+  mailAddress: MyString

@@ -4,6 +4,11 @@ Rails.application.routes.draw do
 
   get 'root/index'
 
+  resources :requests, only:[:new, :create]
+#  get 'requests/new'
+  post 'requests/confirm'
+#  post 'requests'
+
   resources :devices
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
