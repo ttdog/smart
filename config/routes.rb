@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :requests, only:[:new, :create]
 #  get 'requests/new'
   post 'requests/confirm'
+  get 'requests/thanks'
 #  post 'requests'
 
   resources :devices

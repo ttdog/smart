@@ -13,10 +13,16 @@ class RequestsController < ApplicationController
 
   if params[:back]
     render :new
-  elsif @request.save
-    redirect_to @request, notice: 'Task was successfully created.'
-  else
-    render :new
+    elsif @request.save
+      redirect_to :action => :thanks, :params => @request.attributes.compact
+#      redirect_to @request, notice: 'Task was successfully created.'
+    else
+      render :new
+    end
   end
-end
+
+  def thanks
+    @request = Request.new(params.permit(:zip, :name, :nameKana, :address, :tell, :mailAddress))
+    RequestMailer.thanks(@request).deliver_now
+  end
 end
